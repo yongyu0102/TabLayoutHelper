@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#aaaeee"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <TextView
+
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/tv_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <View
+
+        android:visibility="invisible"
+        android:id="@+id/view_indicator"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/module_phone_login_button_enable"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+</FrameLayout>

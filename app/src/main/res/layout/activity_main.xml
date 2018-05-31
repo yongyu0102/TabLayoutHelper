@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.tablelayoutdemo.MainActivity">
+
+    <com.example.administrator.tablelayoutdemo.AutoIndicatorTabLayout
+        android:id="@+id/tb_bar"
+        app:tabGravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"/>
+    <View
+        android:layout_height=".05dp"
+        android:background="#e0e0e0"
+        android:layout_width="match_parent" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
