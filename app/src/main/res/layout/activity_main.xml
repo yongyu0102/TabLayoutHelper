@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="com.example.administrator.tablelayoutdemo.MainActivity">
 
-    <com.example.administrator.tablelayoutdemo.AutoIndicatorTabLayout
+    <android.support.design.widget.TabLayout
         android:id="@+id/tb_bar"
         app:tabGravity="center"
         android:layout_width="match_parent"
