@@ -1,4 +1,4 @@
-package com.example.administrator.tablelayoutdemo;
+package com.example.pz.tab;
 
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;

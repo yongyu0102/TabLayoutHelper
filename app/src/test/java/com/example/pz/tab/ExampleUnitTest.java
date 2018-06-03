@@ -1,4 +1,4 @@
-package com.example.administrator.tablelayoutdemo;
+package com.example.pz.tab;
 
 import org.junit.Test;
 

@@ -1,16 +1,11 @@
-package com.example.administrator.tablelayoutdemo;
+package com.example.pz.tab;
 
 import android.graphics.Color;
-import android.graphics.Typeface;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private List<Fragment> fragmentList = new ArrayList<>();
     private String[] titles = {"体育", "新闻", "好看福利", "新闻2"};
+//    private String[] titles = {"体育",  "好看福利"};
     private HomeVideoFragmentAdapter homeVideoFragmentAdapter;
 
     @Override
@@ -31,35 +27,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        fragmentList.add(TabFragment.getInstance());
-        fragmentList.add(TabFragment.getInstance());
-        fragmentList.add(TabFragment.getInstance());
-        fragmentList.add(TabFragment.getInstance());
+        fragmentList.add(TabFragment.getInstance(Color.BLUE));
+        fragmentList.add(TabFragment.getInstance(Color.GREEN));
+        fragmentList.add(TabFragment.getInstance(Color.YELLOW));
+        fragmentList.add(TabFragment.getInstance(Color.BLUE));
         homeVideoFragmentAdapter = new HomeVideoFragmentAdapter(getSupportFragmentManager(), fragmentList, titles);
         viewPager.setAdapter(homeVideoFragmentAdapter);
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.setTabMode(TabLayout.MODE_FIXED);
-
         setTabLayout();
     }
 
 
     private void setTabLayout() {
-
         new TabLayoutHelper.Builder(tabLayout)
                 .setIndicatorColor(Color.BLUE)
                 .setIndicatorHeight(6)
                 .setIndicatorWith(100)
                 .setTabItemMarginLeft(20)
-                .setIndicatorDrawable(R.drawable.module_phone_login_button_enable)
+                .setIndicatorDrawable(R.drawable.bg_tab_red)
                 .setNormalTextColor(Color.GRAY)
                 .setSelectedTextColor(Color.RED)
                 .setSelectedBold(true)
                 .setIndicatorMargin(40)
-                .setTabItemWith(300)
+//                .setTabItemWith(300)
                 .setTabItemPadding(20)
-                .setSelectedBackgroundColor(Color.YELLOW)
-                .setNormalBackgroundColor(Color.DKGRAY)
+//                .setSelectedBackgroundColor(Color.YELLOW)
+//                .setNormalBackgroundColor(Color.DKGRAY)
                 .setTabItemMarginLeft(20)
                 .build();
     }

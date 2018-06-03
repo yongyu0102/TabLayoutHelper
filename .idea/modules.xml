@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TableLayoutDemo.iml" filepath="$PROJECT_DIR$/TableLayoutDemo.iml" />
+      <module fileurl="file://D:\Blog\TableLayoutHelper\TableLayoutDemo.iml" filepath="D:\Blog\TableLayoutHelper\TableLayoutDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TableLayoutHelper.iml" filepath="$PROJECT_DIR$/TableLayoutHelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
     </modules>
   </component>
 </project>

@@ -1,11 +1,14 @@
-package com.example.administrator.tablelayoutdemo;
+package com.example.library.helper;
 
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.design.widget.TabLayout;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.library.R;
 
 /**
  * hello
@@ -90,7 +93,7 @@ public class TabLayoutHelper {
                         if (j == 0) {
                             int color = builder.getSelectedTextColor();
                             if (color == 0) {
-                                color = tabLayout.getContext().getResources().getColor(R.color.color_000000);
+                                color = Color.BLACK;
                             }
                             textView.setTextColor(color);
                             if (builder.isSelectedBold()) {
