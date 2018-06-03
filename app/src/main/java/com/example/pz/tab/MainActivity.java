@@ -7,6 +7,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.library.helper.TabLayoutHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,8 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private List<Fragment> fragmentList = new ArrayList<>();
     private String[] titles = {"体育", "新闻", "好看福利", "新闻2"};
-//    private String[] titles = {"体育",  "好看福利"};
-    private HomeVideoFragmentAdapter homeVideoFragmentAdapter;
+    private TabFragmentAdapter tabFragmentAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         fragmentList.add(TabFragment.getInstance(Color.GREEN));
         fragmentList.add(TabFragment.getInstance(Color.YELLOW));
         fragmentList.add(TabFragment.getInstance(Color.BLUE));
-        homeVideoFragmentAdapter = new HomeVideoFragmentAdapter(getSupportFragmentManager(), fragmentList, titles);
-        viewPager.setAdapter(homeVideoFragmentAdapter);
+        tabFragmentAdapter = new TabFragmentAdapter(getSupportFragmentManager(), fragmentList, titles);
+        viewPager.setAdapter(tabFragmentAdapter);
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.setTabMode(TabLayout.MODE_FIXED);
         setTabLayout();

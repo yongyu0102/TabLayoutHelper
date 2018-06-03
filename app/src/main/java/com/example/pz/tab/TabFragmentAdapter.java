@@ -12,11 +12,11 @@ import java.util.List;
  * Created by pz on 2018/5/28.
  */
 
-public class HomeVideoFragmentAdapter extends FragmentStatePagerAdapter {
+public class TabFragmentAdapter extends FragmentStatePagerAdapter {
 
     private String[] titles;
     private List<Fragment> fragments;
-    public HomeVideoFragmentAdapter(FragmentManager fm, List<Fragment> fragmentList, String[] titles) {
+    public TabFragmentAdapter(FragmentManager fm, List<Fragment> fragmentList, String[] titles) {
         super(fm);
         this.titles=titles;
         this.fragments=fragmentList;
