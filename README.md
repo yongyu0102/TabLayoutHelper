@@ -25,3 +25,4 @@ use:
     }
 ```
 
+详情见博客地址： [TabLayout 自定义 Indicator 指示线宽度样式](https://yongyu.itscoder.com/2018/06/03/yongyu_20180502_tablayout_helper/) 
