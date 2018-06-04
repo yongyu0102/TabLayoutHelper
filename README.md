@@ -1,8 +1,18 @@
+# **TabLayoutHelper**
+
 this is used to set indicator's style of tabLayout in Android
 
 ![tablayout](https://github.com/yongyu0102/WeeklyBlogImages/blob/master/tablayout/tablayout.gif?raw=true)
 
-use:
+# Usage
+
+1. Add the dependencies to your build.gradle file, tabLayoutHelper is avaiable in JCenter:
+
+```
+compile 'com.yongyu.tabLayoutHelper:library:1.0.0'
+```
+
+2. Call method what you want, such as :
 
 ```java
  private void setTabLayout() {
@@ -16,10 +26,10 @@ use:
                 .setSelectedTextColor(Color.RED)
                 .setSelectedBold(true)
                 .setIndicatorMargin(40)
-               .setTabItemWith(300)
+                .setTabItemWith(300)
                 .setTabItemPadding(20)
                 .setSelectedBackgroundColor(Color.YELLOW)
-              .setNormalBackgroundColor(Color.DKGRAY)
+                .setNormalBackgroundColor(Color.DKGRAY)
                 .setTabItemMarginLeft(20)
                 .build();
     }
